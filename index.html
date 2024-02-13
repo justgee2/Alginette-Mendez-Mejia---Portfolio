@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="style.css">
+<title>My Portfolio</title>
+<style>
+    .container {
+        background-color: #f5deb3; /* Light brown */
+        padding: 20px; /* Add padding for spacing */
+        transition: background-color 0.3s ease;
+    }
+
+    .project-item {
+        background-color: transparent !important; 
+    }
+
+    .container h1,
+    .container h2,
+    .container p {
+        color: #fff; /* White text */
+    }
+</style>
+</head>
+<body>
+<!-- Header -->
+<section id="header">
+<div class="header container">
+<div class="nav-bar">
+<div class="brand">
+<header>
+    <h1>ALGINETTE MEJIA</h1>
+</header>
+<div class="nav-list">
+<div class="hamburger">
+<div class="bar"></div>
+</div>
+<ul>
+<li><a href="#hero" data-after="Home">Home</a></li>
+<li><a href="#about" data-after="About">About me</a></li>
+<li><a href="#projects" data-after="Projects">Projects</a></li>
+<li><a href="#contact" data-after="Contact">Contact</a></li>
+</ul>
+</div>
+</div>
+</div>
+</section>
+<!-- End Header -->
+
+<!-- Hero Section -->
+<section id="hero">
+<div class="hero container">
+<div>
+<h1>Greetings!</h1>
+<h1>I am Alginette Mejia<span></span></h1>
+<a href="#projects" type="button" class="cta" style="background-color: rgb(202, 202, 202);">Portfolio</a>
+</div>
+</div>
+</section>
+<!-- End Hero Section -->
+
+<!-- Projects Section -->
+<section id="projects">
+<div class="projects container">
+<div class="projects-header">
+<h1 class="section-title">Project</h1>
+</div>
+<div class="all-projects">
+<div class="project-item">
+<div class="project-info">
+    <div style="text-align: center;">
+        <h1>GARADZ</h1>
+    </div>
+    <p>"GARADZ" revolutionizes parking with its user-friendly app, simplifying the process of booking parking spaces online.
+         It offers a seamless experience through advanced technology, allowing users to reserve spots conveniently from
+          their smartphones or computers. By providing real-time availability updates and secure payment options, GARADZ eliminates
+         the hassle of searching for parking. Its customizable features cater to diverse needs, ensuring a satisfying experience for all users.
+         In essence, GARADZ transforms urban parking into a hassle-free and efficient endeavor.</p>
+</div>
+<div class="project-img">
+<img src="c:\Users\ADMIN\Downloads\393486481_855606735943168_1228044340464385005_n.png" alt="img">
+</div>
+</div>
+<div class="project-item">
+<div class="project-info">
+<h1 class="section-title">About me</h1>
+<h2>STUDENT</h2>
+<p>Hello! I'm Alginette Mejia, a second-year Information Technology student at University of Pangasinan with a passion for animation and multimedia. While skilled in software development and network security, I'm drawn to the creative possibilities of emerging technologies like AI and machine learning.</p>
+<p>Beyond academics, I actively seek industry mentorship and engage in networking events to contribute to the tech community. Excited for the future, I'm committed to making strides in Information Technology, focusing on animation and multimedia.</p>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- End Projects Section -->
+
+<!-- Contact Section -->
+<section id="contact">
+<div class="contact container">
+<div>
+<h1 class="section-title">Contact details</h1>
+</div>
+<div class="contact-items">
+<div class="contact-item">
+<div class="icon"><img src="c:\Users\ADMIN\Downloads\download-removebg-preview (3).png" /></div>
+<div class="contact-info">
+<h1>Phone</h1>
+<h2>+639614713147</h2>
+</div>
+</div>
+<div class="contact-item">
+<div class="icon"><img src="c:\Users\ADMIN\Downloads\download-removebg-preview (5).png" /></div>
+<div class="contact-info">
+<h1>Email</h1>
+<h2>algine0420@gmail.com</h2>
+</div>
+</div>
+<div class="contact-item">
+<div class="icon"><img src="c:\Users\ADMIN\Downloads\download-removebg-preview (4).png" /></div>
+<div class="Contact details">
+<h1>Address</h1>
+<h2>Nampicuan, Nueva Ecija</h2>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- End Contact Section -->
+<!-- Footer -->
+<section id="footer">
+<div class="footer container">
+<div class="brand">
+</div>
+<h2>Social Media Platform</h2>
+<div class="social-icon">
+<div class="social-item">
+<a href="https://www.facebook.com/anette.mejia.98"><img src="c:\Users\ADMIN\Downloads\download-removebg-preview (2).png" /></a>
+</div>
+<div class="social-item">
+<a href="https://www.instagram.com/ifoundalgine/"><img src="c:\Users\ADMIN\Downloads\download-removebg-preview (1).png" /></a>
+</div>
+<div class="social-item">
+<a href="https://www.linkedin.com/in/alginette-mendez-mejia-955a9a273/"><img src="c:\Users\ADMIN\Downloads\download-removebg-preview.png" /></a>
+</div>
+</div>
+<p>Copyright © 2020 mejia. All rights reserved</p>
+</div>
+</section>
+<!-- End Footer -->
+<script src="./app.js"></script>
+<script>
+    window.addEventListener('scroll', function() {
+        var container = document.querySelector('.container');
+        var scrollY = window.scrollY;
+
+        if (scrollY > 0) {
+            container.style.backgroundColor = '#8B4513'; // Brown color
+        } else {
+            container.style.backgroundColor = '#f5deb3'; // Light brown
+        }
+    });
+</script>
+</body>
+</html>
